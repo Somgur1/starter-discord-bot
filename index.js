@@ -25,23 +25,25 @@ var mysql = require('mysql');
 require('dotenv').config()
 const APPLICATION_ID = process.env.APPLICATION_ID 
 const TOKEN = process.env.TOKEN 
+const PUBLIC_KEY = process.env.PUBLIC_KEY || 'not set'
+const GUILD_ID = process.env.GUILD_ID 
 
-const axios = require('axios')
-const express = require('express');
-const { InteractionType, InteractionResponseType, verifyKeyMiddleware } = require('discord-interactions');
+// const axios = require('axios')
+// const express = require('express');
+// const { InteractionType, InteractionResponseType, verifyKeyMiddleware } = require('discord-interactions');
 
-const app = express();
+// const app = express();
 
-const discord_api = axios.create({
-  baseURL: 'https://discord.com/api/',
-  timeout: 3000,
-  headers: {
-	"Access-Control-Allow-Origin": "*",
-	"Access-Control-Allow-Methods": "GET, POST, PUT, DELETE",
-	"Access-Control-Allow-Headers": "Authorization",
-	"Authorization": `Bot ${TOKEN}`
-  }
-});
+// const discord_api = axios.create({
+//   baseURL: 'https://discord.com/api/',
+//   timeout: 3000,
+//   headers: {
+// 	"Access-Control-Allow-Origin": "*",
+// 	"Access-Control-Allow-Methods": "GET, POST, PUT, DELETE",
+// 	"Access-Control-Allow-Headers": "Authorization",
+// 	"Authorization": `Bot ${TOKEN}`
+//   }
+// });
 
 
 
@@ -139,6 +141,6 @@ client.on('messageCreate', async function(msg) {
 });
 // const LoginToken = "MTEzNTE3NjY2NTg1Nzc4OTk2Mg.Gu4jFb.p_jMID9ceYZFXLsZXbgYJ28hll8qRFaCrWaCZU";
 // const LoginToken2 = "MTAzMjk4NjA2OTY0MzI5Njc5OA.GQNIz-.aVxx04v7DFIMKNsvPXCCvKLUfqSUoWdGKrrZyw";
-// client.login(TOKEN);
+client.login(TOKEN);
 
 
