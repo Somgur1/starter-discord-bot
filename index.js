@@ -137,8 +137,8 @@ client.on('messageCreate', async function(msg) {
  
   }
 });
-const LoginToken = "MTEzNTE3NjY2NTg1Nzc4OTk2Mg.Gu4jFb.p_jMID9ceYZFXLsZXbgYJ28hll8qRFaCrWaCZU";
-const LoginToken2 = "MTAzMjk4NjA2OTY0MzI5Njc5OA.GQNIz-.aVxx04v7DFIMKNsvPXCCvKLUfqSUoWdGKrrZyw";
-client.login(LoginToken2);
+// const LoginToken = "MTEzNTE3NjY2NTg1Nzc4OTk2Mg.Gu4jFb.p_jMID9ceYZFXLsZXbgYJ28hll8qRFaCrWaCZU";
+// const LoginToken2 = "MTAzMjk4NjA2OTY0MzI5Njc5OA.GQNIz-.aVxx04v7DFIMKNsvPXCCvKLUfqSUoWdGKrrZyw";
+// client.login(TOKEN);
 
 
