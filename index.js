@@ -21,13 +21,31 @@ const client = new Client({
   ],
 });
 var mysql = require('mysql');
-var con = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "",
-  database: "dnd_bot",
-  charset: 'utf8mb4' // Add charset to support emojis
+
+require('dotenv').config()
+const APPLICATION_ID = process.env.APPLICATION_ID 
+const TOKEN = process.env.TOKEN 
+
+const axios = require('axios')
+const express = require('express');
+const { InteractionType, InteractionResponseType, verifyKeyMiddleware } = require('discord-interactions');
+
+const app = express();
+
+const discord_api = axios.create({
+  baseURL: 'https://discord.com/api/',
+  timeout: 3000,
+  headers: {
+	"Access-Control-Allow-Origin": "*",
+	"Access-Control-Allow-Methods": "GET, POST, PUT, DELETE",
+	"Access-Control-Allow-Headers": "Authorization",
+	"Authorization": `Bot ${TOKEN}`
+  }
 });
+
+
+
+
 
 const fs = require('node:fs');
 const path = require('node:path');
