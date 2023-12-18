@@ -1,0 +1,28 @@
+{
+    "server": "445180187358003220",
+    "messageid": "1186060338685284532",
+    "commands": [
+        {
+            "messageId": "1186060338685284532",
+            "reaction": "dnd_dice",
+            "roleId": "1040272307412803635",
+            "roletree": {
+                "guild": "445180187358003220",
+                "icon": null,
+                "unicodeEmoji": null,
+                "id": "1040272307412803635",
+                "name": "Testing role",
+                "color": 15277667,
+                "hoist": false,
+                "rawPosition": 2,
+                "permissions": "1071698665025",
+                "managed": false,
+                "mentionable": false,
+                "flags": 0,
+                "tags": null,
+                "createdTimestamp": 1668090645412
+            }
+        }
+    ],
+    "party": []
+}
